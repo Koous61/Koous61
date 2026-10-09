@@ -38,14 +38,17 @@ jobs:
             dist/snake-dark.svg?palette=github-dark&color_snake=#3DDCFF&color_dots=#151B28,#1B3157,#2A55A8,#4D7CFF,#9A7BFF
             dist/snake-light.svg?color_snake=#4D7CFF&color_dots=#EBEFF5,#C9D8FF,#93B0FF,#5B82F5,#7B5CFF
 
+      # dist/ is created by the snake's Docker container as root, so collect into a fresh folder
       - name: Collect images
-        run: cp profile-3d-contrib/*.svg dist/
+        run: |
+          mkdir out
+          cp dist/*.svg profile-3d-contrib/*.svg out/
 
       - name: Publish to the output branch
         uses: crazy-max/ghaction-github-pages@v5
         with:
           target_branch: output
-          build_dir: dist
+          build_dir: out
           commit_message: "chore: refresh profile art"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
