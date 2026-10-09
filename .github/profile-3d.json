@@ -1,0 +1,11 @@
+{
+  "type": "normal",
+  "fileName": "koous61-3d.svg",
+  "backgroundColor": "#0B1020",
+  "foregroundColor": "#E8EEF6",
+  "strongColor": "#3DDCFF",
+  "weakColor": "#58657C",
+  "radarColor": "#9A7BFF",
+  "growingAnimation": true,
+  "contribColors": ["#161D2E", "#1D3A73", "#2C5FD6", "#4D7CFF", "#3DDCFF"]
+}
