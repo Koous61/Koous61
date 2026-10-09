@@ -15,27 +15,9 @@
   <img src="assets/stats.svg" width="100%" alt="8+ years in Unreal Engine · 20+ engineers led · 5 shipped titles · 5× lower server costs" />
 </p>
 
-```cpp
-// Dmitry Nichiporchik — Technical Director · Lead Software Developer
-UCLASS()
-class ADmitry : public ATechnicalDirector
-{
-    GENERATED_BODY()
-
-public:
-    FString Now       = TEXT("Mytaverse — enterprise immersive platform on UE5");
-    FString Specialty = TEXT("Engine-level C++, console ports, cloud streaming");
-    int32   YearsInUE = 8;    // since 2018, UE4 → UE5
-    int32   PeakTeam  = 20;   // engineers in one org
-
-    virtual void BeginPlay() override
-    {
-        BuildTeams();     // StoryMode 3 → 20+, a UE department from zero at iTechArt
-        Ship();           // King's Bounty II, Cyberpunk 2077, Crime Boss, X8, MetaRun
-        CutCloudCosts();  // 4× cheaper clients on AWS, 5× cheaper servers on ARM
-    }
-};
-```
+<p align="center">
+  <img src="assets/code.svg" width="100%" alt="ADmitry.h — Dmitry as an Unreal Engine class: Technical Director at Mytaverse, engine-level C++, console ports, cloud streaming; 8 years in UE, teams up to 20 engineers" />
+</p>
 
 <p align="center">
   <img src="assets/career.svg" width="100%" alt="Career: StoryMode 2018–2021, iTechArt Group 2021–2022, Red Pirates 2022–2023, Mytaverse 2023–now" />
